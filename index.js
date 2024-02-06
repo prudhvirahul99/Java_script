@@ -1,26 +1,30 @@
+let num1 = 5
+let num2 = 2
+document.getElementById("num1-el").textContent= num1
+document.getElementById("num2-el").textContent= num2
 
+let sumEL=document.getElementById("total")
 
-//let doneEl=document.getElementById("done-el")
-let saveEl=document.getElementById("save-el")
-let countEL=document.getElementById("count-el")
-let count=0
-
-// console.log(saveEl)
-
-function increment(){
-    count=count+1     //count += 1 
-    countEL.innerText = count
+function add(){
+    console.log("addition")
+    let result =  num1 + num2
+    sumEL.textContent = "TOTAL: " + result
 }
 
-function save(){
-    let countStr= count + " - "   // for spacing textContent [(mdn)-google]
-    saveEl.textContent = saveEl.textContent + countStr //saveEl.innerText + =  countStr
-    countEL.innerText = 0
-    count = 0
-    
-    // console.log(count)
+function sub(){
+    console.log("subtraction")
+    let result =  num1 - num2
+    sumEL.textContent = "TOTAL: " + result
 }
- function done(){
-    countEL.innerText = 0
-    saveEl.textContent =  "Previous Entries: "
- }
+
+function multi(){
+    console.log("multiplication")
+    let result =  num1 * num2
+    sumEL.textContent = "TOTAL: " + result
+}
+
+function div(){
+    console.log("division")
+    let result =  num1 / num2
+    sumEL.textContent = "TOTAL: " + result
+}

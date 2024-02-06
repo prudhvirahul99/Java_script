@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter app</title>
+    <title>Mini-Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>COUNTER</h1>
-        <h2 id="count-el">0</h2>
-        <button class="btn" onclick="increment()">INCREMENT</button><BR><BR>
-        <button class="btn2" id="save-btn" onclick="save()">SAVE</button>
-        <p id="save-el">Previous Entries: </p>
-        <button class="btn3" id="done-btn" onclick="done()">DONE</button>
+        <span id="num1-el"></span>
+        <span id="num2-el"></span><br><br>
+        <button onclick="add()">ADDITION</button><br><br>
+        <button onclick="sub()">SUBTRACTION</button><br><br>
+        <button onclick="multi()">MULTIPLICATION</button><br><br>
+        <button onclick="div()">DIVISION</button><br><br>
+        <span id="total">TOTAL: </span>
     </div>
+
+
     <script src="index.js"></script>
 </body>
 </html>
